@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesion</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/applicationLogin.css">
+    <link rel="stylesheet" href="icons/fonts.css">
+    <script>
+    function check(input) {
+      if (input.value != document.getElementById('user').value) {
+        input.setCustomValidity('Ingresar un Usuario correcto1');
+      }
+      else if (input.value != document.getElementById('password').value) {
+        input.setCustomValidity('Ingresar Contraseña');
+      }
+      else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
+      }
+    }
+    
+    function redirect()
+    {
+        window.location.href="Index.html"; 
+    }    
+    </script>
+</head>
+<body>
+    <div class="logo-beterinaria">
+        <a>
+            <img class="logoPerros" src="img/cabecera-perros.jpg"/>
+        </a>
+        <a>
+            <img class="logoPerrosGatos" src="img/cabecera-perros-y-gatos.jpg"/>
+        </a>
+    </div>
+    <div class="container">
+        <h2>Iniciar Sesion</h2>
+        <div class="iniciarSesion">
+            <form action="Index.html" method="post" name="form1" id="form1" class="formControl">
+                <div class="formGroup">
+                    <a><span class="icon-dot"></span></a>                    
+                    <input type="text" name="user" placeholder="Usuario" class="formControl input-s" required />
+                </div>
+                <div class="formGroup">   
+                    <a><span class="icon-dot"></span></a>  
+                    <input type="password" name="pass" placeholder="Contraseña" class="formControl input-s" required />
+                </div>
+                <div class="formGroup">
+                    <button type="submit" class="button" id="buttonIniciarSesion" onclick="redirect();">Iniciar Sesion</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

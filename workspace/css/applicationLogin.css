@@ -1,0 +1,133 @@
+    * {
+    	padding:0;
+    	margin:0;
+    	-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+    }
+
+    body {background:#FEFEFE;}
+    
+    input
+    {
+        width: 100%;
+        height: 25px;        
+    }
+    
+    .logo-beterinaria {
+    	width: 50%;
+    	height: 100px;
+    	top:0;
+    	background-color: white;
+    }
+    
+    .logoPerros {
+    	display:block;
+    	width: 100%;
+    	height: 100px;
+    }
+    
+    .logoPerrosGatos {
+    	display: none;
+    }
+    
+    .container {
+        color: #E6344A;
+    	width:100%;
+    	height:400px;
+    	position: fixed;
+    	top:100px;
+    	background:#023859;
+    	text-align:center;
+    }
+    
+    .iniciarSesion{
+    	width:90%;
+    	height:300px;
+    	margin-top: 50px;
+    }
+    
+    .formControl {
+        border-radius: 4px;
+    }
+    
+    .button {
+        width: 200px;  
+        height: 50px;
+        border-radius: 4px;
+    }
+    
+    .button:hover  {
+        background:#E6344A;
+    }
+    
+    .formControl, .formControl:focus {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .formControl:focus {
+        border-color: #177bbb;
+    }
+    
+    .formGroup {
+        margin-bottom: 15px;
+    }
+
+    .input-s-sm {
+      width: 200px;
+    }
+    
+    .input-s {
+      width: 200px;
+    }
+    
+    .input-s-lg {
+      width: 250px;
+    }
+    
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:130px;
+	}
+	
+	.logo-beterinaria {
+		display:block;
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		top:0;
+		background-color: white;
+	}
+
+	.logoPerros {
+		display: none;
+	}
+	
+	.logoPerrosGatos {
+		display:block;
+		width: 50%;
+		height: 50px;
+	}
+
+    .container {
+        color: #E6344A;
+    	width:100%;
+    	height:400px;
+    	position: fixed;
+    	top:50px;
+    	background:#023859;
+    	text-align:center;
+    }
+
+    .iniciarSesion{
+        color: #023859;
+        display:block;
+    	width:90%;
+    	height:300px;
+    	margin-top:50px;
+    	background:#023859;
+    }
